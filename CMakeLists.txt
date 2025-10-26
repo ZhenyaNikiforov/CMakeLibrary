@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 3.22.0)
+project(Proschanie_s_clientom)
+add_library(ProschalnayaBiblioteka SHARED bibl.h bibl.cpp)
+add_executable(Proschanie Proschanie.cpp)
+target_link_libraries(Proschanie ProschalnayaBiblioteka)
